@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>To Do List</title>
-   <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body >
     <header class="relative flex items-center justify-between mx-4 mt-2  ">
-    <img src="menu (2).png" alt="menu"> 
-    <h1 class="absolute left-10  font-medium">Be Pro</h1> 
-    <img src="notification.png" alt="notification">  
+        <img src="menu (2).png" alt="menu">
+        <h1 class="absolute left-10  font-medium">Be Pro</h1>
+        <img src="notification.png" alt="notification">
     </header>
-    <main class="mx-4">
+    <main  id="Main" class="mx-4  ">
         <h2 class="font-normal mt-3 ml-2">Hello Breif</h2>
         <div class="flex gap-5 ">
-        <img class="w-[140px] h-[200px]" src="download .jpg" alt="">
-        <h2 class=" flex justify-center items-center font-normal">start again to acheive</h2>
+            <img class="w-[140px] h-[200px]" src="download .jpg" alt="">
+            <h2 class=" flex justify-center items-center font-normal">start again to acheive</h2>
 
-</div>
+        </div>
 
-<div class=" flex justify-between">
-    <h2 class="ml-2">Todays tasks</h2>
-    <button><img src="ajouter-le-fichier.png" alt=""></button>
+        <div class=" flex justify-between">
+            <h2 class="ml-2">Todays tasks</h2>
 
-</div>
-<section class="w-[80%]  h-[200px] m-auto border-solid border-2 rounded-xl ">
-    <div class="m-auto w-[100%] flex justify-center">
-    <h2 >Creat Tasks</h2>
-    </div>
-    <article class="">
-        <input type="text" placeholder="Add task . . .">
-    </article>
-   <button class="">Creat</button>
-</section>
+            <div id ="placedetache">
+
+            </div>
+            
+            <button id="boton " class="hover:bg-green-100"
+                onclick="document.getElementById('tache').classList.remove ('hidden')"><img src="ajouter-le-fichier.png"
+                    alt=""></button>
+
+        </div>
+        <section id="tache" class="hidden w-full h-screen fixed top-0 left-0 right-0 bottom-0 backdrop-blur-sm  ">
+
+            <form 
+            class=" fixed inset-0 w-[80%]   h-[200px] m-auto border-solid border-4 rounded-xl   flex flex-col ">
+            <button id="closeForm">close</button>
+
+            <div class="m-auto w-[100%]  flex justify-center bg-green-100">
+                <h2>Creat Tasks</h2>
+            </div>
+            <article class="flex justify-center  m-auto border-solid border-spacing-2 rounded-xl ">
+                <input id="tache-field" type="text" placeholder="Add task . . .">
+            </article>
+            <button
+            type="submit"
+            class="  flex justify-center items-center h-[50px] bg-green-200 w-24 self-center mb-2 rounded-xl">Creat</button>
+        </form>
+    </section>
+        
 
     </main>
-    
+    <script src="ui.js"></script>
 </body>
+
 </html>
