@@ -22,23 +22,28 @@
 
         </div>
 
-        <div class=" flex justify-between">
-            <h2 class="ml-2">Todays tasks</h2>
+        <div class="flex flex-col ">
+           <div class="flex justify-between"> <h2 class="ml-2">Todays tasks</h2>
 
-            <div id ="placedetache">
+          
 
-            </div>
-            
-            <button id="boton " class="hover:bg-green-100"
+            <button id="boton" class="hover:bg-green-100"
                 onclick="document.getElementById('tache').classList.remove ('hidden')"><img src="ajouter-le-fichier.png"
                     alt=""></button>
+                </div>
+  <div id ="placedetache">
+
+            </div>
+                    
 
         </div>
+        
+
         <section id="tache" class="hidden w-full h-screen fixed top-0 left-0 right-0 bottom-0 backdrop-blur-sm  ">
 
-            <form 
+            <form id="taskForm"
             class=" fixed inset-0 w-[80%]   h-[200px] m-auto border-solid border-4 rounded-xl   flex flex-col ">
-            <button id="closeForm">close</button>
+            <button type="button" id="closeForm">close</button>
 
             <div class="m-auto w-[100%]  flex justify-center bg-green-100">
                 <h2>Creat Tasks</h2>
