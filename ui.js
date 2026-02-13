@@ -16,7 +16,9 @@ taskForm.addEventListener("submit", function(e){
 
     // Create task container
     const taskContainer = document.createElement("div");
-    taskContainer.classList.add("flex", "items-center", "justify-between", "bg-green-100","p-2","rounded-xl","mt-[50px]","w-[350px]", "mr-[200px]" ,"h-[70px]");
+    taskContainer.classList.add("flex", "items-center", "justify-between", "bg-green-100","p-2","rounded-xl","mt-[50px]","w-[350px]", "mr-[200px]" ,"h-[70px]","md:w-[1200px]"
+
+    );
 
     // Create task text
     const taskText = document.createElement("span");
